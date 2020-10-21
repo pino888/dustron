@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*overall rules*/
+
+@font-face {
+    font-family: "dustron header";
+    src: url("resources/fonts/AnotherDanger-Demo.otf")
+}
+
+html {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+h1 {
+    font-family: "dustron header";
+    padding: 2%;
+    letter-spacing: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header and menu*/
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    height: 60px;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    width: 50%;
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav {
+    display: inline-flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 2%;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+header a:hover {
+    background-color: rgb(24, 26, 30);
+    transition-duration: 0.2s;
+}
+
+/*main content*/
+
+.topsection {
+    padding-top: 60px;
+}
+
+div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newstitle {
+    width: 100%;
+    background-color: rgb(24, 26, 30);
+}
+
+.quote {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+}
+
+.secodd {
+    flex-wrap: wrap;
+}
+
+#secoddleft {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#secoddright {
+    width: 50%;
+}
+
+/*.seceven {
+    padding: 2%;
+    flex-wrap: wrap;
+}*/
+
+#secevenleft {
+    width: 50%;
+}
+
+#secevenright {
+    width: 50%;
+    justify-content: center;
+}
+
+.biotop {
+    float: left;
+    margin: 10px 10px 10px 0px;
+    max-width: 400px;
+    min-width: 100px;
+}
+
+.biobot {
+    float: right;
+    margin: 10px;
+    max-width: 400px;
+    min-width: 100px;
+}
+
+#tite {
+    background-image: url("resources/images/music/T.I.T.E\ web\ cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2%;
+}
+
+#damnation {
+    background-image: url("resources/images/music/DUSTRON\ WEB\ BANNER-damnation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+details {
+    background-color: rgb(24, 26, 30);
+}
+
+#contact {
+    padding-top: 60px;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    height: 50px;
+    background-color: rgb(24, 26, 30);
+}
+
+.copy {
+    width: 50%;
+    padding-left: 4%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.socialicons {
+    width: 50%;
+    flex-flow: row;
+    padding-right: 4%;
+    justify-content: flex-end;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*mobile devices*/
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    section {
+        flex-direction: column;
+    }
+}
